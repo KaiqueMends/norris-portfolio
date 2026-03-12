@@ -67,7 +67,7 @@ export default function Socials() {
               key={index}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="absolute w-[40vw] md:w-[22vw] max-w-[320px] aspect-[2/3] rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] cursor-pointer"
+              className="absolute w-[40vw] md:w-[22vw] max-w-[320px] aspect-2/3 rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] cursor-pointer"
               style={{
                 transform: `translateX(${translateX}%) translateY(${translateY}%) rotate(${rotate}deg) scale(${scale})`,
                 zIndex: zIndex,

@@ -24,7 +24,7 @@ export const WORK: WorkItem[] = [
     role: "Front-end",
     year: "2025",
     tags: ["React.js", "UI/UX", "Performance", "Alta Conversão"],
-    previewSrc: "/work/arqsiria.png",
+    previewSrc: "/work/arqSiria.png",
     link: "https://site-siria-arq.vercel.app/",
   }
 ];

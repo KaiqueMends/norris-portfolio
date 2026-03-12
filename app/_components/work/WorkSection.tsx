@@ -45,7 +45,19 @@ export function WorkSection() {
   const [featuredSrcB, setFeaturedSrcB] = useState(WORK[0]?.previewSrc ?? "");
   const [featuredTop, setFeaturedTop] = useState<"A" | "B">("A");
 
-  const activeSlug = hoverSlug ?? focusSlug ?? scrollSlug ?? WORK[0]?.slug ?? null;
+  const [activeSlug, setActiveSlug] = useState<string | null>(WORK[0]?.slug ?? null);
+
+  useEffect(() => {
+    if (hoverSlug) setActiveSlug(hoverSlug);
+    else if (focusSlug) setActiveSlug(focusSlug);
+  }, [hoverSlug, focusSlug]);
+
+  useEffect(() => {
+    if (scrollSlug && !hoverSlug && !focusSlug) {
+      setActiveSlug(scrollSlug);
+    }
+  }, [scrollSlug]);
+
   const activeItem =
     (activeSlug ? WORK.find((w) => w.slug === activeSlug) : null) ?? WORK[0] ?? null;
   const allowCursorPreview = isDesktop && !reducedMotion;

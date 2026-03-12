@@ -482,19 +482,6 @@ export function WorkSection() {
                       <span className="text-accent">+</span>
                       <span>WebGL</span>
                     </div>
-                    <Link
-                      href={`/work/${activeItem.slug}`}
-                      data-cursor="button"
-                      className={[
-                        "inline-flex items-center gap-2 rounded-full",
-                        "bg-white/5 px-4 py-2 text-xs font-semibold tracking-[0.22em] text-neutral-200/80",
-                        "ring-1 ring-white/10 transition hover:bg-white/10",
-                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70",
-                        "focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950",
-                      ].join(" ")}
-                    >
-                      ABRIR   <span aria-hidden="true">↗</span>
-                    </Link>
                   </div>
                 )}
               </div>

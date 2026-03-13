@@ -6,7 +6,7 @@ import { AnimatedWave } from "./_components/wave/AnimatedWave"; // Importe a ond
 
 export default function Page() {
   return (
-    <main className="relative w-full">
+    <main className="relative w-full overflow-x-clip">
       <Hero />
       
       <div className="relative z-10 bg-[#050505] w-full -mt-0.5">
